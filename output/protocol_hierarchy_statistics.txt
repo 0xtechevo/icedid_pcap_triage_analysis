@@ -1,0 +1,57 @@
+
+===================================================================
+Protocol Hierarchy Statistics
+Filter: 
+
+eth                                      frames:20940 bytes:10877998
+  ip                                     frames:20298 bytes:10851034
+    udp                                  frames:381 bytes:63780
+      dns                                frames:268 bytes:32790
+      nbdgm                              frames:38 bytes:8854
+        smb                              frames:38 bytes:8854
+          mailslot                       frames:38 bytes:8854
+            browser                      frames:38 bytes:8854
+      nbns                               frames:3 bytes:300
+      ntp                                frames:22 bytes:3564
+      cldap                              frames:24 bytes:6487
+      ssdp                               frames:10 bytes:1946
+      data                               frames:13 bytes:9593
+      mdns                               frames:3 bytes:246
+    tcp                                  frames:19917 bytes:10787254
+      http                               frames:6 bytes:4245
+        ocsp                             frames:1 bytes:1152
+        text                             frames:1 bytes:1411
+          tcp.segments                   frames:1 bytes:1411
+        media                            frames:1 bytes:856
+          tcp.segments                   frames:1 bytes:856
+      tls                                frames:3696 bytes:2617915
+        tcp.segments                     frames:622 bytes:613663
+          tls                            frames:150 bytes:169696
+            _ws.malformed                frames:2 bytes:554
+          data                           frames:1 bytes:304
+        _ws.malformed                    frames:73 bytes:8450
+      nbss                               frames:632 bytes:162414
+        smb                              frames:35 bytes:6799
+          smb_pipe                       frames:8 bytes:1184
+            lanman                       frames:8 bytes:1184
+        smb2                             frames:595 bytes:155431
+          tcp.segments                   frames:18 bytes:17988
+          dcerpc                         frames:46 bytes:11932
+            samr                         frames:42 bytes:10764
+          data                           frames:9 bytes:7312
+            tcp.segments                 frames:2 bytes:2964
+          smb2                           frames:34 bytes:12814
+            smb2                         frames:14 bytes:5012
+      dcerpc                             frames:224 bytes:69374
+        epm                              frames:40 bytes:11168
+        lsarpc                           frames:16 bytes:4384
+        rpc_netlogon                     frames:6 bytes:6708
+        tcp.segments                     frames:9 bytes:7899
+        drsuapi                          frames:78 bytes:22636
+      data                               frames:39 bytes:13723
+      ldap                               frames:136 bytes:54988
+        tcp.segments                     frames:28 bytes:25560
+          ldap                           frames:8 bytes:11872
+      _ws.malformed                      frames:11 bytes:3216
+  arp                                    frames:642 bytes:26964
+===================================================================
